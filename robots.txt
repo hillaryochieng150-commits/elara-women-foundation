@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hillaryochieng150-commits.github.io/elara-women-foundation/sitemap.xml
