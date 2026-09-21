@@ -793,3 +793,143 @@ footer a:hover {
         flex-direction: column;
     }
 }
+/* =========================================================
+   ELARA ORIGINAL HERO FIX
+   ========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(255, 47, 146, 0.22),
+            transparent 32%
+        ),
+        linear-gradient(
+            120deg,
+            #050505 0%,
+            #0b0b0b 55%,
+            #160b12 100%
+        );
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.92) 0%,
+            rgba(0,0,0,0.68) 50%,
+            rgba(0,0,0,0.35) 100%
+        );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #ff2f92;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    padding: 9px 15px;
+    border: 1px solid rgba(255,47,146,0.35);
+    border-radius: 50px;
+
+    background: rgba(255,47,146,0.07);
+}
+
+.eyebrow i {
+    font-size: 0.75rem;
+}
+
+.hero h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: clamp(3.4rem, 7vw, 6.5rem);
+    line-height: 0.98;
+    letter-spacing: -3px;
+
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: #ff2f92;
+}
+
+.hero-seo-text {
+    max-width: 690px;
+    margin-bottom: 32px;
+
+    color: rgba(255,255,255,0.72);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    position: relative;
+    z-index: 3;
+}
+
+/* Decorative pink glow */
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -150px;
+    bottom: -160px;
+
+    border: 1px solid rgba(255,47,146,0.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 80px rgba(255,47,146,0.08),
+        inset 0 0 80px rgba(255,47,146,0.05);
+
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100vh;
+        padding-top: 130px;
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+        font-size: 3.35rem;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-seo-text {
+        font-size: 0.92rem;
+    }
+
+    .eyebrow {
+        font-size: 0.68rem;
+    }
+}
