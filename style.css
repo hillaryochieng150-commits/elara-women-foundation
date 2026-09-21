@@ -19,20 +19,7 @@
     --grey: #777777;
     --light-grey: #eeeeee;
 
-    --border: rgba(255, 255, 255, 0.1);
-
-   .hero-seo-text {
-    max-width: 650px;
-    margin-top: 18px;
-    font-size: 16px;
-    line-height: 1.7;
-    opacity: 0.85;
-}
-    --shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-
-    --radius: 18px;
-}
-
+    --border: rgba(255, 255, 255, 0.1)
 
 /* ================= RESET ================= */
 
@@ -1356,4 +1343,11 @@ blockquote {
     .scroll-indicator {
         display: none;
     }
+}
+.hero-seo-text {
+    max-width: 650px;
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.85;
 }
